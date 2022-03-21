@@ -1,4 +1,47 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+}
+
+.text-green {
+  color: var(--green-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+  border-radius: 5px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  height: 10000px;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color) !important;
 }
 /*# sourceMappingURL=app.css.map */
