@@ -1,6 +1,9 @@
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
 }
 
 .text-green {
@@ -21,6 +24,25 @@ body {
   font-family: "Roboto", sans-serif;
   height: 10000px;
 }
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: var(--yellow-color) !important;
+  }
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start navbar */
 .navbar {
   background-color: var(--dark-color);
   .nav-link {
@@ -38,3 +60,33 @@ body {
     border-color: var(--green-color) !important;
   }
 }
+/* End navbar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Start Feature */
+.feature {
+  .icon-holder {
+    height: 200px;
+    svg {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .number {
+      font-size: 12rem;
+      color: var(--section-color);
+    }
+    .icon {
+      color: var(--green-color);
+    }
+  }
+  .feat {
+    h4 {
+      color: var(--yellow-color);
+    }
+  }
+}
+/* End Feature */

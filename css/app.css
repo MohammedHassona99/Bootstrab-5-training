@@ -1,6 +1,9 @@
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
 }
 
 .text-green {
@@ -25,6 +28,29 @@ body {
   height: 10000px;
 }
 
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+  color: var(--yellow-color) !important;
+}
+
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* Start navbar */
 .navbar {
   background-color: var(--dark-color);
 }
@@ -44,4 +70,38 @@ body {
 .navbar .navbar-toggler[aria-expanded="true"] {
   border-color: var(--green-color) !important;
 }
+
+/* End navbar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+/* Start Feature */
+.feature .icon-holder {
+  height: 200px;
+}
+
+.feature .icon-holder svg {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.feature .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.feature .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.feature .feat h4 {
+  color: var(--yellow-color);
+}
+
+/* End Feature */
 /*# sourceMappingURL=app.css.map */
