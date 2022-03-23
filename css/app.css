@@ -172,4 +172,10 @@ body {
 }
 
 /* End Our Team */
+/* Start Project */
+.project {
+  background-color: var(--dark-color);
+}
+
+/* End Project */
 /*# sourceMappingURL=app.css.map */
