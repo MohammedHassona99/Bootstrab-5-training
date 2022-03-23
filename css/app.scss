@@ -38,7 +38,7 @@ body {
   height: 2px;
   background-color: var(--green-color);
   position: absolute;
-  bottom: -20px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -90,3 +90,43 @@ body {
   }
 }
 /* End Feature */
+/* Start Our Work */
+.our-work {
+  background-color: var(--section-color);
+  ul {
+    li {
+      cursor: pointer;
+      &.active {
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+      }
+      &:not(.active):hover {
+        color: var(--red-color);
+      }
+    }
+  }
+  .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: attr(data-work);
+      position: absolute;
+      background-color: rgba(51, 209, 204, 0.76);
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      transition: 0.3s;
+      font-size: 1.5rem;
+      transform: translateX(calc(-100% - 5px));
+    }
+    &:hover::before{
+      transform: translateX(0);
+    }
+  }
+}
+/* End Our Work */
