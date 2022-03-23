@@ -158,4 +158,18 @@ body {
 }
 
 /* End Our Work */
+/* Start Our Team */
+.our-team {
+  background-color: var(--section-color);
+}
+
+.our-team h2 {
+  color: var(--yellow-color);
+}
+
+.our-team .team h4 {
+  background-color: var(--green-color);
+}
+
+/* End Our Team */
 /*# sourceMappingURL=app.css.map */
