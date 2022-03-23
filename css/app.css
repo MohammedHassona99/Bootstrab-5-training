@@ -25,7 +25,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 10000px;
 }
 
 .main-btn {
@@ -214,4 +213,39 @@ body {
 }
 
 /* End Subscribe */
+/* Start Footer */
+footer {
+  background-color: var(--dark-color);
+}
+
+footer .copyright > span {
+  color: var(--green-color);
+}
+
+footer .copyright div > span {
+  color: var(--yellow-color);
+}
+
+footer .contact svg {
+  width: 20px;
+  height: 20px;
+}
+
+footer .contact .facebook {
+  background-color: #1877f2;
+}
+
+footer .contact .twitter {
+  background-color: #1da1f2;
+}
+
+footer .contact .linkedin {
+  background-color: #0077b5;
+}
+
+footer .contact .youtube {
+  background-color: #ff0000;
+}
+
+/* End Footer */
 /*# sourceMappingURL=app.css.map */
