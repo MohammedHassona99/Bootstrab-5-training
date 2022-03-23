@@ -178,4 +178,40 @@ body {
 }
 
 /* End Project */
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+
+.subscribe ::-webkit-input-placeholder {
+  color: white;
+}
+
+.subscribe :-ms-input-placeholder {
+  color: white;
+}
+
+.subscribe ::-ms-input-placeholder {
+  color: white;
+}
+
+.subscribe ::placeholder {
+  color: white;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+
+/* End Subscribe */
 /*# sourceMappingURL=app.css.map */
