@@ -44,7 +44,7 @@ body {
   height: 2px;
   background-color: var(--green-color);
   position: absolute;
-  bottom: -20px;
+  bottom: -5px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -104,4 +104,58 @@ body {
 }
 
 /* End Feature */
+/* Start Our Work */
+.our-work {
+  background-color: var(--section-color);
+}
+
+.our-work ul li {
+  cursor: pointer;
+}
+
+.our-work ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.76);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  -webkit-transform: translateX(calc(-100% - 5px));
+          transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* End Our Work */
 /*# sourceMappingURL=app.css.map */
